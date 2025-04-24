@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--popup start-->
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+               
+                <!-- 選單說明 -->
+                <p class="submenu_info">
+                    <span>功能說明區及操作影片 手機版隱藏本說明區塊（含QRCODE部分）</span>
+                    <img src="images/25QR.jpg" class="QR">
+                </p>
+
+            
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">2-1 登錄林產品起始資訊</h2>
+                   
+                </div>
+                <section>
+                    <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                    <form action="">
+                        <div class="flex-form form_grid">
+                            <div class="form_grp" disabled>
+                                <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>林產品起始資訊追溯碼：</label>
+                                <div class="form_content">
+                                    <b>3-123456-24-01（系統完成新增後才會產生）</b>
+                                </div>
+                            </div>
+                            
+                            <div class="form_grp">
+                                <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>林產物類別：</label>
+                                <div class="form_content">
+                                  
+                                    <select>
+                                        <option>國有林林產物</option>
+                                        <option>公有林林產物</option>
+                                        <option>私有林產物</option>
+                                        
+                                    </select>
+                                  
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>林產品品項：</label>
+                                <div class="form_content">
+                                    <select>
+                                        <option>國有林林產物-造林木（原木）</option>
+                                        <option>國有林林產物-造林木（其他）</option>
+                                        <option>國有林林產物-漂流木（具標售價值）</option>
+                                        <option>國有林林產物-漂流木（其他）</option>
+                                        <option>國有林林產物-贓證木</option>
+                                        <option>國有林林產物-竹</option>
+                                        <option>公有林林產物-造林木（原木）</option>
+                                        <option>公有林林產物-造林木（其他）</option>
+                                        <option>公有林林產物-竹</option>
+                                        
+                                        <option>私有林產物-造林木（原木）</option>
+                                        <option>私有林產物-造林木（其他）</option>
+                                        <option>私有林產物-漂流木（其他）</option>
+                                        <option>私有林產物-竹</option>
+                                       
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>樹/竹種：</label>
+                                <div class="form_content">
+                                <select id="selectSample" name="">
+                                <option value="">柳杉</option>
+                                <option value="">項目一</option>
+                                <option value="">項目二</option>
+                                <option value="">項目三</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>材積/重量：</label>
+                                <div class="form_content form_col-3-3-3-3 form_inline">
+                                <input name="text" type="text" value="12345" placeholder="522.000000 小數點6位">
+                                <select>
+                                    <option>平方公尺</option>
+                                    <option>公斤</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>貯放場域：</label>
+                                <div class="form_content">
+                                
+                                <select>
+                                    <option>請選擇場所</option>
+                                    <option>快樂貓集貨場</option>
+                                    <option>快樂貓集貨場2</option>
+                                </select>
+                                <div class="notice_info">選項僅會出現「1-3場所資料管理」通過審核且啟用中的場所</div>
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                            <label for="selectSample" class="form_title">採取位置：</label>
+                                <div class="form_content">
+                                <div class="form_content">
+                                 <input type="text" placeholder="請輸入採取位置">
+                                </div>
+                                </div>
+                            </div>
+                             <div class="form_grp">
+                            <label for="selectSample" class="form_title">撿拾地點：</label>
+                                <div class="form_content">
+                                 <input type="text" placeholder="請輸入撿拾地點">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>許可證/漂流木號碼：</label>
+                                <div class="form_content form_col-3-3-3-3 form_inline">
+                                <input name="text" type="text" value="12345" >-
+                                <input name="text" type="text" value="12345" >-
+                                <input name="text" type="text" value="12345" >
+                                <button class="btn-primary">比對許可證/漂流木API</button>
+                                <div class="notice_info">號碼存在</div>
+                                <div class="notice_error">號碼比對不到</div>
+                                
+                                </div>
+                            </div>
+                           
+                            <div class="form_grp">
+                                <label  class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>來源證明文件上傳：</label>
+                                <div class="form_content file_upload">
+                                    <div class="btn_grp">
+                                        <input type="file" id="myfile" name="myfile">
+                                        <button type="button" class="btn btn_upload"><i class="i_upload2"></i>來源證明文件上傳（限定JPG/PNG/PDF格式,檔案需小於10MB）</button>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                         <input name="text" type="text" value="許可證3358號" size="10" >
+                                        <a href="#" target="_blank">.PDF</a>
+                                         <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                    </div>
+                                    <div class="item">
+                                         <input name="text" type="text" value="檢尺資料" size="10" >
+                                        <a href="#" target="_blank">.PDF</a>
+                                         <button type="button" class="btn btn-delete"><i class="i_close2"></i>刪除</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">附加說明：</label>
+                                <div class="form_content">
+                                    <textarea id="w3review" name="w3review" rows="4" cols="50">
+
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <div class="form_grp" disabled>
+                                <label for="address" class="form_title">登錄日期：</label>
+                                <div class="form_content">
+                                    <input name="" type="text" value="2025-05-03 帶入建立日期,隱藏欄位" class="calendar" readonly>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </section>
+
+                                    <h2 class="title">審核紀錄（本功能兩階審核）</h2>
+                        <div class="scroltable-container">
+                            <table class="table_hover scroltable">
+                                <tbody>
+                                <tr>
+                                
+
+                                <th>日期時間</th>
+                                <th>審核進度</th>
+                                <th>資料狀態</th>
+
+
+                                </tr>
+
+                                <tr>
+                                <td align="center">2025/02/21 13:30:00</td>
+
+                               
+                                <td align="center">提出申請</td>
+                                <td align="center">--</td>
+
+                                </tr>
+
+                                <tr>
+                                <td align="center">2025/02/22 10:30:00</td>
+
+                                
+                                <td align="center">受理單位初審通過</td>
+                                <td align="center">--</td>
+
+                                </tr>
+                                <tr>
+                                <td align="center">2025/02/22 11:30:00</td>
+
+                                
+                                <td align="center">受理單位複審通過</td>
+                                <td align="center">--</td>
+
+                                </tr>
+                                 <tr>
+                                <td align="center">2025/02/23 09:30:00</td>
+
+                               
+                                <td align="center">審查單位初審通過</td>
+                                <td align="center">--</td>
+
+                                </tr>
+                                 <tr>
+                                <td align="center">2025/02/23 09:30:00</td>
+
+                               
+                                <td align="center">審查單位複審通過</td>
+                                <td align="center">通過</td>
+
+                                </tr>
+                               
+
+                                </tr>
+                            </tbody>
+                        </table>
+                       </div>
+               
+                     </section>
+                <!-- control panel-->
+                <div class="btn_panel btn_grp">
+                    <button type="button" class="btn btn-normal">取消</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='2-1-list.htm'">儲存並提交審核</button>
+                     <button type="button" class="btn btn-normal" onclick="location.href='2-1-list.htm'">資料審核中</button>
+                    <button type="button" class="btn btn-red" onclick="location.href='2-1-list.htm'">撤回申請進行修改</button>
+                    <button type="button" class="btn btn-primary" onclick="alert('已使用過無法異動資料');">異動申請（審核通過且使用量無異動時開放）</button>
+                    
+                <!-- control panel End -->
+
+
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

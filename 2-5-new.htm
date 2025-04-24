@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>林產物產銷履歷資訊系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--popup start-->
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+                <!-- 第二層選單 -->
+                <!-- <ul class="submenu">
+                    <li><a href="#">1-1 組織資料</a></li>
+                    <li><a href="#">1-2 列印標籤授權使用</a></li>
+                    <li><a href="#">1-3 L4系統使用權限</a></li>
+                    <li class="now"><a href="#">1-4 使用權限</a></li>
+                    <li><a href="#">1-5 系統權限</a></li>
+                </ul> -->
+                <!-- 選單說明 -->
+
+
+                <!-- 第三層選單 -->
+                <!-- <ul class="th3_menu">
+                    <li class="now"><a href="#">1-4-1 第三層選單</a></li>
+                    <li><a href="#">1-4-2 第三層選單</a></li>
+                </ul> -->
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">手動追溯條碼移入</h2>
+
+                </div>
+
+
+                <section>
+
+                   
+                        <div class="flex-form form_grid">
+                         
+
+
+
+
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">[移入]產製追溯條碼：</label>
+                                <div class="form_content form_inline">
+                                    <input name="userId" id="userId" type="text" value="0427004357" class="used">
+                                    <button type="button" id="submitBtn" class="btn btn-submit">開啟鏡頭掃描</button>
+                                     <button type="button" id="submitBtn" class="btn btn-submit">查詢</button>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                </section>
+
+
+                <section >
+
+                     <h3 >林產品追溯碼條掃描結果</h3>
+   
+                     
+                        <table class="table_hover">
+                                    <thead>
+                                        <tr>
+                                            <th>[移入]產製追溯條碼</th>
+                                            <th>出貨日期</th>
+                                            <th>出貨對象</th>
+                                            <th>樹/竹種</th>
+                                            <th>出貨備註</th>
+                                            <th>數量</th>
+                                            <th>單位</th>
+                                            <th>出貨來源</th>
+                                           
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td align="center">00-3-54168-24-0004</td>
+                                            <td align="center">2025/02/26</td>
+                                            <td align="center">指定對象(不具備系統帳號)<br><input type="text" value="請輸入金鑰"></td>
+                                            <td align="center">柳杉</td>
+                                            <td align="center">柳杉桌</td>
+                                            <td align="center">1</td>
+                                            <td align="center">件</td>
+                                            <td align="center">23456 快樂貓木材廠</td>
+                                            
+                                        </tr>
+                                     
+                                    </tbody>
+                                </table>
+
+                </section>
+
+
+                <!-- control panel-->
+                <div class="btn_panel btn_grp">
+                    <button type="button" class="btn btn-normal"  onclick="location.href='2-5-list.htm'">取消</button>
+                     
+                    <button type="button" class="btn btn-primary" onclick="confirm('確認移入')?alert('已向對方提出申移入申請,對方同意後完成移入'):alert('放棄移入');">進行移入作業</button>
+                    <!-- <button type="button" class="btn btn-secondary">存檔</button> -->
+                </div>
+                <!-- control panel End -->
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

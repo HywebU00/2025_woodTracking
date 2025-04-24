@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>林產物產銷履歷資訊系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--popup start-->
+    <div id="modal" class="modal">
+        <h2>選擇來源</h2>
+        
+        <div class="table_operating">
+            <h3>原料選用說明：</h3>
+            <p>根據產出的商品類型差異，預計產出為半成品時，產出商品的計量單元將與選擇的原料相同，並且不開放混合不同樹種及不同計量單位的原料；預計產出為製成品時，產出單位將為「件」，並且開放混合不同的樹竹種及不同計量單位的原料。</p>
+            
+            <h4>查詢條件</h4>
+            <div class="function_mix type2">
+                <!-- 搜尋 + 其他組合 -->
+                <div>
+                    <!-- 搜尋 -->
+                    <input name="text" type="text" value="" placeholder="請輸入任意字串查詢">
+                    <div class="form_grp form_inline">
+                        <!--  -->
+                        <label for="selectSample" class="form_title">樹/竹種：</label>
+                        <div class="form_content">
+                            <select id="selectSample" name="">
+                                <option value="">柳杉</option>
+                                <option value="">項目一</option>
+                                <option value="">項目二</option>
+                                <option value="">項目三</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 日期 -->
+                    <div class="form_grp form_inline">
+                        <label for="selectSample" class="form_title">日期區間：</label>
+                        <div class="form_content form_inline">
+                            <div class="datepick">
+                                <input name="" type="date" value="" class="calendar" placeholder="開始日期">～
+                            </div>
+                            <div class="datepick">
+                                <input name="" type="date" value="" class="calendar" placeholder="結束日期">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 選取狀態 -->
+                <div class="status">
+                    <p class="remarks">已選取<span>2</span>筆資料</p>
+                    <button type="button" class="btn btn-blue">確定新增</button>
+                </div>
+            </div>
+            
+           <h4>查詢結果</h4>
+
+            <table class="table_hover scroltable" >
+                <tr>
+                    <th></th>
+                    <th>林產物類別</th>
+                    <th>林產品品項</th>
+                    <th>樹/竹種	</th>
+                    <th>商品名稱</th>
+                    <th>追溯碼類別</th>
+                    <th>追溯碼</th>
+                    
+                    <th>日期</th>
+                    <th>剩餘量</th>
+                    <th>單位</th>
+                </tr>
+                <tr>
+                    <td align="center" ><input type="checkbox" checked></td>
+                    <td>國有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>--</span></td>
+                    <td align="center"><span>林產品起始資訊追溯碼</span></td>
+                    <td align="center"><span>3-123456-24-01 </span></td>
+                    <td>2025/05/03</td>
+                    <td align="right"><span>12345</span></td>    
+                    <td>平方公尺</td>
+                    
+                                   
+                </tr>
+                <tr disabled>
+                    <td align="center" ><input type="checkbox" disabled></td>
+                    <td>公有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>--</span></td>
+                    <td align="center"><span>林產品起始資訊追溯碼</span></td>
+                    <td align="center"><span>3-123456-24-02 </span></td>
+                    <td>2025/05/04</td>
+                    <td align="right"><span>56789</span></td> 
+                    <td>公斤</td>
+                    
+                              
+                </tr>
+                <tr>
+                    <td align="center" ><input type="checkbox" checked></td>
+                    <td>國有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>柳杉原木</span></td>
+                    <td align="center"><span>[移入]產製追溯條碼</span></td>
+                    <td align="center"><span>3-123456-24-03 </span></td>
+                    <td>2025/05/05</td>
+                    <td align="right"><span>34567</span></td> 
+                    <td>平方公尺</td>
+                    
+                                     
+                </tr>
+                 <tr>
+                    <td align="center" ><input type="checkbox"></td>
+                    <td>私有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>柳杉板材</span></td>
+                    <td align="center"><span>[移入]產製追溯條碼</span></td>
+                    <td align="center"><span>3-123456-24-04 </span></td>
+                    <td>2025/05/05</td>
+                    <td align="right"><span>34567</span></td> 
+                    <td>平方公尺</td>
+                    
+                                     
+                </tr>
+                 <tr>
+                    <td align="center" ><input type="checkbox"></td>
+                    <td>國有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>柳杉角材</span></td>
+                    <td align="center"><span>加工追溯條碼</span></td>
+                    <td align="center"><span>3-123456-24-05 </span></td>
+                    <td>2025/05/05</td>
+                    <td align="right"><span>34567</span></td> 
+                    <td>平方公尺</td>
+                    
+                                     
+                </tr>
+                 <tr>
+                    <td align="center" ><input type="checkbox"></td>
+                    <td>公有林林產物</td>
+                    <td align="center">造林木（原木）</td>
+                    <td align="center"><span>柳杉</span></td>
+                    <td align="center"><span>柳杉板材</span></td>
+                    <td align="center"><span>加工追溯條碼</span></td>
+                    <td align="center"><span>3-123456-24-06</span></td>
+                    <td>2025/05/05</td>
+                    <td align="right"><span>34567</span></td> 
+                    <td>平方公尺</td>
+                    
+                                     
+                </tr>
+
+            </table>
+            <p>名詞說明：<br>
+                林產品起始資訊追溯碼=自己進的貨<br>
+                加工追溯條碼=自己的加工半成品<br>
+                [移入]產製追溯條碼=從上游收到的貨，但排除單位為「件」的製成品</p>
+     
+        </div>
+
+            
+
+    </div>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+                <!-- 第二層選單 -->
+                <!-- <ul class="submenu">
+                    <li><a href="#">1-1 組織資料</a></li>
+                    <li><a href="#">1-2 列印標籤授權使用</a></li>
+                    <li><a href="#">1-3 L4系統使用權限</a></li>
+                    <li class="now"><a href="#">1-4 使用權限</a></li>
+                    <li><a href="#">1-5 系統權限</a></li>
+                </ul> -->
+                <!-- 選單說明 -->
+                <p class="submenu_info">
+                    <span>功能說明區及操作影片 手機版隱藏本說明區塊（含QRCODE部分）</span>
+                    <img src="images/25QR.jpg" class="QR">
+                </p>
+
+                <!-- 第三層選單 -->
+                <!-- <ul class="th3_menu">
+                    <li class="now"><a href="#">1-4-1 第三層選單</a></li>
+                    <li><a href="#">1-4-2 第三層選單</a></li>
+                </ul> -->
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">2-2 林產品加工管理</h2>
+                    <!-- function功能區塊 -->
+                    <!-- <div class="function">
+                        <ul>
+                            <li class="icon_back"><a href="#">回上一頁</a></li>
+                            <li class="icon_print"><a href="#">友善列印</a></li>
+                            <li class="icon_forward"><a href="#">轉寄友人</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <section>
+                    <!--h3 class="sub_title">新增林產品移出/出貨</h3-->
+                    <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。注意：更換商品類型將會清除選入的加工原料及產出商品資訊</p>
+                    <section class="stage_wrap">
+                        <div class="order">
+
+                            <section>
+                                <div class="num">1</div>
+                                <div class="info">
+                                    <h4><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>選擇產出產品類型：</h4>
+                                    <div class="flex-form form_grid">
+
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>商品類型：</div>
+                                            <div class="form_content">
+                                                <label><input type="radio" name="output" checked>半成品（產出商品的計量單元將與選擇的原料相同，並且不開放混合不同樹種及不同計量單位的原料）</label>
+                                                <label><input type="radio" name="output" onclick="alert('更換商品類型將會清除選入的加工原料及產出商品資訊');">製成品（產出單位將為「件」，並且開放混合不同的樹竹種及不同計量單位的原料）</label>
+                                            </div>
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="num">2</div>
+                                <div class="info">
+                                    <h4><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>選擇加工原料</h4>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <div class="btn_grp">
+                                                <button type="button" class="btn btn-primary" id="openModal"><i class="i_edit2"></i>選擇加工批次</button>
+                                            </div>
+                                            <table class="table_hover">
+                                                <tr>
+                                                    
+                                                    <th>樹/竹種</th>
+                                                    <th>商品名稱</th>
+                                                    <th>追溯碼類別</th>
+                                                    <th>追溯碼</th>
+                                                    <th>剩餘材積或重量</th>
+                                                    <th>計量單位</th>
+                                                    <th>本次使用量<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></th>
+                                                    <th>移除</th>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" nowrap="">柳杉</td>
+                                                    <td align="center" nowrap="">--</td>
+                                                    <td align="center">林產品起始資訊追溯碼</td>
+                                                    <td align="center">3-123456-24-01</td>
+                                                    <td align="center">12345</td>
+                                                    <td align="center">立方公尺</td>
+
+                                                    <td align="center"><input type="number"  value="50" size="5"></td>
+                                                    <td><button type="button" class="btn btn-delete"><i class="i_close2"></i>移除</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" nowrap="">柳杉</td>
+                                                    <td align="center" nowrap="">柳杉原木</td>
+                                                    <td align="center">[移入]產製追溯條碼</td>
+                                                    <td align="center">3-123456-24-03</td>
+                                                    <td align="center">34567</td>
+                                                    <td align="center">立方公尺</td>
+                                                    <td align="center"><input type="number"  value="50" size="5"></td>
+                                                    <td><button type="button" class="btn btn-delete"><i class="i_close2"></i>移除</button></td>
+                                                </tr>
+                                            </table>
+
+
+                                 
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section>
+                                <div class="num">3</div>
+                                <div class="info">
+                                    <h4><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>產出商品資訊</h4>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>商品名稱：</div>
+                                            <div class="form_content form_col-6-6 form_inline">
+                                               
+                                                    <input name="" type="text" value="柳杉板材"  placeholder="商品名稱">
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>產出商品量：</label>
+                                            <div class="form_content form_col-6-6 form_inline">
+                                               
+
+                                                <input type="text" name="labernum" placeholder="95 半成品不得大於原料加總量/製成品填寫件數"> [立方公尺/公斤](半成品根據原料計量單位)
+                                                / 件 (製成品)
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form_grp">
+                                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>加工日期：</label>
+                                             <div class="form_content form_inline">
+                                             
+                                                <div class="datepick">
+                                                <input name="" type="date" value="2025-05-12" class="calendar" placeholder="加工日期" >
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+
+                                       
+                                </div>
+                            </section>
+
+
+                        </div>
+                    </section>
+
+                    
+                </section>
+
+                <!-- control panel-->
+                <div class="btn_panel btn_grp">
+                    <button type="button" class="btn btn-normal">取消</button>
+                    <button type="button" class="btn btn-red" onclick="location.href='2-2-list.htm'">作廢（未移出時）</button> 
+                    <button type="button" class="btn btn-primary" onclick="location.href='2-2-list.htm'">儲存</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='2-2-list.htm'">修改（未移出時 僅能修改3）</button> 
+                    
+                </div>
+                <!-- control panel End -->
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

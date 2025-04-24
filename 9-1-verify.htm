@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--popup start-->
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">9-1 實名制身分審核(含異動)</h2>
+
+                </div>
+
+                <!-- Add-選擇土地以新增生產批次 -->
+                <section>
+                    <!-- <h3 class="sub_title">次標題</h3> -->
+                    <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                    <div class="flex-form form_grid">
+                        
+                        
+                            <div class="form_grp">
+                                <div class="form_title">審核狀態：</div>
+                                <div class="form_content form_inline">
+                                    <input type="radio" name="aa">已審核
+                                    <input type="radio" name="aa" checked>待審核
+                                    
+                                </div>
+                            </div>
+                             <div class="form_grp">
+                                <div class="form_title">資料類型：</div>
+                                <div class="form_content form_inline">
+                                   <select>
+                                       <option>全部類型</option>
+                                       <option>1-2基本資料管理</option>
+                                       <option>1-3場所資料管理</option>
+                                   </select>
+                                    
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <div class="form_title">申請日期區間：</div>
+                                <div class="form_content form_inline">
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="開始日期">
+                                    </div>
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="結束日期">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <div class="form_title"></div>
+                                <div class="form_content form_inline">
+                                   <button type="button" class="btn btn-primary" onclick="alert('儲存完成');">查詢</button>
+                                    
+                                </div>
+                            </div>
+
+
+                    </div>
+
+                    </section>
+                     
+                     <section>
+
+
+                
+
+                <!-- control panel-->
+               
+
+                                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">查詢結果</h2>
+
+                </div>
+                 <section>
+                  
+                   <div class="pagination">
+                        <form action="" class="form_inline">
+                            <div class="total"> 共<span>3</span>筆資料，第<span>1/1</span>頁，每頁顯示 
+                                <select name="" id="">
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                </select> 筆
+                               
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="scroltable-container">
+                        <table class="table_hover scroltable">
+                        <tbody>
+                            <tr>
+                             <th>組織代碼</th>
+                            <th>姓名/公司名稱</th>
+                            <th>資料類型</th>
+                            
+                            <th>審核狀態</th>
+                            
+                            
+                            <th>申請日期</th>
+                            <th>審核</th>
+                            </tr>
+
+
+
+                            <tr>
+                            <td align="center">12345</td>
+                            <td align="center">快樂貓</td>
+                            <td align="center">1-2基本資料</td>
+                            
+                            <td align="center">送出審核申請</td>
+                            
+                            
+                            <td align="center">2025/02/27 17:00:21</td>
+                            <td align="center"><button type="button" class="btn btn-primary" onclick="location.href='9-1-verify2.htm'">審核</button></td>
+                            </tr>
+
+                             <tr>
+                            <td align="center">12346</td>
+                            <td align="center">快樂狗</td>
+                            <td align="center">1-3場所資料</td>
+                            
+                            <td align="center">受理單位初審通過</td>
+                            
+                           
+                            <td align="center">2025/02/27 16:26:21</td>
+                            <td align="center"><button type="button" class="btn btn-primary" onclick="location.href='9-1-verify2.htm'">審核</button></td>
+                            </tr>
+
+
+
+                        </tbody>
+                        </table>
+                    </div>
+
+                </section>
+                <!-- control panel End -->
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

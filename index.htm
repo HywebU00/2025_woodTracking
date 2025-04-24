@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <style>
+        h1{ font-size: 1.75em; padding: .5em 0; }
+        .demo_wrap {
+            max-width: 1000px;
+            margin: 0em auto 1em;
+            padding: 2em 15px;
+            clear: both;
+            background: #FFF
+        }
+        .demo_wrap h1 {
+            display: inline-block;
+            margin: 0px auto;
+            /*float: left;*/
+            margin-right: 1em 
+        }
+        b{
+            background: deeppink;
+            color: #fff;
+            padding: .25em .5em;
+        }
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+
+        .demo_wrap h1 img { width: auto; }
+        .num { width: 12% }
+
+        body { counter-reset: num }
+        table {
+            margin-bottom: 1em;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td{
+            padding: .5em;
+            text-align: left;
+        }
+
+        table td{ border: #ddd 1px solid; word-break: break-all; }
+        table td a{ word-break: break-all; }
+        table th{
+            background-color: #F3F3F3;
+            color: #333;
+            border: #DDD 1px solid;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") " "
+        }
+        tbody tr td:nth-child(2) { width: 35% }
+        tbody tr td span{ color: deeppink; }
+        .btn_grp{ text-align: right; }
+
+        .normal a{
+            text-decoration: none;
+            background: #009688;
+            color: #fff;
+            padding: .5em 1.5em;
+            border-radius: 3px;
+        }
+
+        @media screen and (max-width:545px) {
+           .btn_grp{ text-align: center; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="demo_wrap">
+        <h2 class="normal"><a href="參考用form.htm" target="_blank">參考用form</a></h2>
+    </div>
+    <hr>
+    <div class="demo_wrap">
+        <h1>臺灣林產品生產追溯系統 - 後台</h1>
+        <div class="table_wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td></td>
+                        <td>前台-登入</td>
+                        <td><a href="front-login.htm" target="_blank"></a></td>
+                    </tr> -->
+                    <tr>
+                        <td></td>
+                        <td>1-1 使用者帳號管理</td>
+                        <td><a href="1-1-edit.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            1-2 基本資料管理<br>
+                            1-2 基本資料管理-異動申請
+                        </td>
+                        <td>
+                            <a href="1-2-edit.htm" target="_blank"></a><br>
+                            <a href="1-2-edit2.htm" target="_blank"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>1-3 場所資料管理</td>
+                        <td>
+                            <a href="1-3-list.htm" target="_blank"></a><br>
+                            <a href="1-3-new.htm" target="_blank"></a><br>
+                            <a href="1-3-edit2.htm" target="_blank"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2-1 登錄林產品起始資訊</td>
+                        <td>
+                            <a href="2-1-list.htm" target="_blank"></a><br>
+                            <a href="2-1-new.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2-2 林產品加工管理</td>
+                        <td>
+                            <a href="2-2-list.htm" target="_blank"></a><br>
+                            <a href="2-2-new.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2-3 林產品庫存管理</td>
+                        <td>
+                            <a href="2-3-list.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2-4 林產品移出/出貨</td>
+                        <td>
+                            <a href="2-4-list.htm" target="_blank"></a><br>
+                            <a href="2-4-new.htm" target="_blank"></a><br>
+                            <a href="2-4-edit.htm" target="_blank"></a><br>
+                            <a href="2-4-print.htm" target="_blank"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2-5 林產品收貨及追溯條碼移入</td>
+                        <td>
+                            <a href="2-5-list.htm" target="_blank"></a><br>
+                            <a href="2-5-new.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            3-1 報表管理-業者報表<br>
+                            3-2 報表管理-管理者報表
+                        </td>
+                        <td>
+                            <a href="3-1-Query.htm" target="_blank"></a><br>
+                            <a href="3-2-Query.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            9-1 實名制身分審核(含異動)<br>
+                            9-2 林產品初始資訊登錄審核<br>
+                        </td>
+                        <td>
+                            <a href="9-1-verify.htm" target="_blank"></a><br>
+                            <a href="9-1-verify2.htm" target="_blank"></a><br>
+                            <a href="9-2-verify.htm" target="_blank"></a><br>
+                            <a href="9-2-verify2.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>10-1 審核單位管理</td>
+                        <td>
+                            <a href="10-1-list.htm" target="_blank"></a><br>
+                            <a href="10-1-new.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>10-2 審核單位帳號管理</td>
+                        <td>
+                            <a href="10-2-list.htm" target="_blank"></a><br>
+                            <a href="10-2-new.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            11-1 帳號清查<br>
+                            11-2 系統登入及操作紀錄查詢
+                        </td>
+                        <td>
+                            <a href="11-1-Query.htm" target="_blank"></a><br>
+                            <a href="11-2-Query.htm" target="_blank"></a><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <a href="javascript:;" class="scrollToTop" >回頁首</a> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="js/hyui.js"></script>
+    <script src="js/customize.js"></script>
+    <script>
+    $(function() {
+        $('tbody').find('a').each(function(index, el) {
+            var Link = $(this).attr('href');
+            $(this).text(Link);
+        });
+    })
+    </script>
+</body>
+
+</html>

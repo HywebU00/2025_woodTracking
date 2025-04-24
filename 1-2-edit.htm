@@ -1,0 +1,335 @@
+<!doctype html>
+
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <!--popup start-->
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+
+
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+                <!-- 第二層選單 -->
+                <!-- <ul class="submenu">
+                    <li><a href="#">1-1 組織資料</a></li>
+                    <li><a href="#">1-2 列印標籤授權使用</a></li>
+                    <li><a href="#">1-3 L4系統使用權限</a></li>
+                    <li class="now"><a href="#">1-4 使用權限</a></li>
+                    <li><a href="#">1-5 系統權限</a></li>
+                </ul> -->
+                <!-- 選單說明 -->
+                <!--p class="submenu_info">
+                    <span>功能說明區及操作影片 手機版隱藏本說明區塊（含QRCODE部分）</span>
+                    <img src="images/25QR.jpg" class="QR">
+                </p-->
+
+                <!-- 第三層選單 -->
+                <!-- <ul class="th3_menu">
+                    <li class="now"><a href="#">1-4-1 第三層選單</a></li>
+                    <li><a href="#">1-4-2 第三層選單</a></li>
+                </ul> -->
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">1-2 基本資料管理</h2>
+                    <!-- function功能區塊 -->
+                    <!-- <div class="function">
+                        <ul>
+                            <li class="icon_back"><a href="#">回上一頁</a></li>
+                            <li class="icon_print"><a href="#">友善列印</a></li>
+                            <li class="icon_forward"><a href="#">轉寄友人</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+
+                <!-- Add-選擇土地以新增生產批次 -->
+                <section>
+                    <!-- <h3 class="sub_title">次標題</h3> -->
+                    <p class="explan">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。配合「實名制身份審核」申請。申請中資料將會進入鎖定狀態</p>
+                    <div class="flex-form form_grid">
+                        <div class="form_grp">
+                            <label for="address" class="form_title">組織代碼：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    123456(帳號開立時自動產出)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title">實名制身份審核狀態：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    通過/不通過（包含申請中及尚未提出申請）
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分別：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp">
+                                    <label><input name="" type="radio" name="orgtype" >自然人</label>
+                                    <label><input name="" type="radio" name="orgtype" checked>依法設立或登記之法人或團體，或領有工廠登記證或商業登記證明文件者</label>
+                                    <label><input name="" type="radio" name="orgtype">經本部公告指定辦理登錄溯源資訊及標示之特定品項林產品或一定規模之林產品經營者或其他經本部專案核准者</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>姓名(自然人) /公司名稱（法人）：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    <input name="" type="text" value="快樂貓" placeholder="生產者名稱" size="35">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證統一編號：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    <input name="" type="text" value="12345678" placeholder="統一編號" size="35">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證附件上傳：</label>
+                            <div class="form_content file_upload">
+                                
+                                   
+                                    
+                                    <!--button type="file" class="btn btn-primary" >檔案上傳(限PDF格式)</button-->
+                                    <div class="item">
+                                        <div><a>快樂貓身分證.pdf</a></div>
+                                        <button type="button" class="btn btn-delete">上傳/更換附件</button>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>統一編號：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    <input name="" type="text" value="12345678" placeholder="統一編號" size="35"><span class="notice_info">非自然人才呈現並必填</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>設立登記文件附件上傳：<br>/公告指定或專案核准文件上傳：</label>
+                            <div class="form_content file_upload">
+                                
+                                   
+                                    
+                                    <!--button type="file" class="btn btn-primary" >檔案上傳(限PDF格式)</button-->
+                                    <div class="item">
+                                        <div><a>快樂貓設立登記文件.pdf</a></div>
+                                        <button type="button" class="btn btn-delete">上傳/更換附件</button>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>負責人姓名：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    <input name="" type="text" value="快樂貓" placeholder="負責人姓名" size="35"><span class="notice_info">非自然人才呈現並必填</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>聯絡人姓名：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="radio_grp form_inline">
+                                    <input name="" type="text" value="快樂貓" placeholder="負責人姓名" size="35"><span class="notice_info">非自然人才呈現並必填</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>電話：</label>
+                            <div class="form_content form_inline tel">
+                                <input name="" type="tel"  placeholder="區碼">
+                                <input name="" type="tel"  placeholder="電話號碼">
+                                
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="" class="form_title">傳真：</label>
+                            <div class="form_content form_inline tel">
+                                <input name="" type="tel" placeholder="區碼">
+                                <input name="" type="tel"  placeholder="傳真號碼">
+                                
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="email" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>電子信箱：</label>
+                            <div class="form_content">
+                                <input name="email" type="email" id="email"  placeholder="電子信箱格式abc@mail.com" value="54happycat@cat.com(預設帶入申請帳號填寫的電子信箱)">
+                            </div>
+                        </div>                       
+                        <div class="form_grp">
+                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>戶籍地址 (自然人) 公司所在地地址（法人）：</label>
+                            <div class="form_content" id="fake-legend">
+                                <div class="form_content form_inline address">
+                                <input name="postcode" type="text" value="999" placeholder="郵遞區號" class="add_code" readonly >
+                                <select name="" id="">
+                                    <option value="">請選擇</option>
+                                    <option value="">台北市</option>
+                                    
+                                </select>
+                                <select name="" id="">
+                                    <option value="">請選擇</option>
+                                    <option value="">中正區</option>
+                                    
+                                </select>
+                                <input name="username" type="text" value="" placeholder="請輸入產品經營業者地址" class="user_typing">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="form_grp">
+                            <label for="" class="form_title">通訊地址：</label>
+                            <div class="form_content form_inline address">
+                                <input name="postcode" type="text" value="999" placeholder="郵遞區號" class="add_code" readonly>
+                                <select name="" id="">
+                                    <option value="">請選擇</option>
+                                    <option value="">台北市</option>
+                                    
+                                </select>
+                                <select name="" id="">
+                                    <option value="">請選擇</option>
+                                    <option value="">中正區</option>
+                                    
+                                </select>
+                                <input name="username" type="text" value="" placeholder="請輸入通訊地址" class="user_typing">
+                                <div class="checkbox">
+                                        <label><input type="checkbox"><span>同上一欄位地址資料</span></label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        
+                       
+      
+                    </div>
+                </section>
+
+                     <section>
+
+                    <h2 class="title">審核紀錄</h2>
+                        <div class="scroltable-container">
+                            <table class="table_hover scroltable">
+                                <tbody>
+                                <tr>
+                                
+
+                                <th>日期時間</th>
+                                <th>審核進度</th>
+                                <th>通過狀態</th>
+
+
+                                </tr>
+
+                                <tr>
+                                <td align="center">2025/02/20 13:30:00</td>
+
+                               
+                                <td align="center">尚未提交審核</td>
+                                <td align="center">--</td>
+
+                                </tr>
+                                <tr>
+                                <td align="center">2025/02/21 13:30:00</td>
+
+                               
+                                <td align="center">提交審核</td>
+                                <td align="center">--</td>
+
+                                </tr>
+
+                                <tr>
+                                <td align="center">2025/02/22 10:30:00</td>
+
+                                
+                                <td align="center">初審通過</td>
+                                <td align="center">--</td>
+
+                                </tr>
+                                 <tr>
+                                <td align="center">2025/02/23 09:30:00</td>
+
+                               
+                                <td align="center">複審通過</td>
+                                <td align="center">通過</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                       </div>
+               
+                     </section>
+                <!-- control panel-->
+                <div class="btn_panel btn_grp">
+                    <button type="button" class="btn btn-primary" onclick="alert('儲存完成並送出審核申請');">儲存並提交實名制身份審核</button>
+                    <button type="button" class="btn btn-normal"  onclick="alert('資料審核中');">實名制身份審核申請中</button>
+                    
+                    <button type="button" class="btn btn-red" onclick="confirm('確認撤回')?alert('撤回成功'):alert('取消撤回');">撤回申請(尚未審核通過時)</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='1-2-edit2.htm'">異動已審核通過資料</button>
+                </div>
+                <!-- control panel End -->
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+
+    <script>w3.includeHTML();</script>
+
+</body>
+
+</html>

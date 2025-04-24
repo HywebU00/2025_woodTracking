@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--popup start-->
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <section class="main">
+                <!-- 第二層選單 -->
+                <!-- <ul class="submenu">
+                    <li><a href="#">1-1 組織資料</a></li>
+                    <li><a href="#">1-2 列印標籤授權使用</a></li>
+                    <li><a href="#">1-3 L4系統使用權限</a></li>
+                    <li class="now"><a href="#">1-4 使用權限</a></li>
+                    <li><a href="#">1-5 系統權限</a></li>
+                </ul> -->
+                <!-- 選單說明 -->
+                <p class="submenu_info">
+                    <span>功能說明區及操作影片 手機版隱藏本說明區塊（含QRCODE部分）</span>
+                    <img src="images/25QR.jpg" class="QR">
+                </p>
+
+                <!-- 第三層選單 -->
+                <!-- <ul class="th3_menu">
+                    <li class="now"><a href="#">1-4-1 第三層選單</a></li>
+                    <li><a href="#">1-4-2 第三層選單</a></li>
+                </ul> -->
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">報表管理-管理者報表</h2>
+
+                </div>
+                <section>
+                    <p class="explan"> 註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。 </p>
+                    <form action="">
+                        <div class="flex-form form_grid">
+                           
+
+                            <div class="form_grp">
+                                <div class="form_title">報表類型：</div>
+                                <div class="form_content form_inline">
+                                   <input type="radio" name="report" checked>庫存現況報表
+                                   <input type="radio" name="report">入庫報表
+                                   <input type="radio" name="report">出庫報表
+                                   <input type="radio" name="report">庫存調整報表
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="form_grp">
+                                <div class="form_title">查詢區間：</div>
+                                <div class="form_content form_inline">
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="開始日期">
+                                    </div>
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="結束日期">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                             <div class="form_grp">
+                                <div class="form_title">組織ID或名稱：</div>
+                                <div class="form_content form_inline">
+                                   <input type="text" name="orgid" value="12345 快樂貓">
+                                  
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                           
+
+
+                        </div>
+                    </form>
+                </section>
+                <!-- control panel-->
+                <div class="btn_panel btn_grp">
+                   
+                    
+                    <button type="button" class="btn btn-primary" >查詢</button>
+                    <button type="button" class="btn btn-primary" >樞紐分析</button>
+
+                    
+                </div>
+
+                <div class="inner_head">
+                    <!-- h2節點 -->
+                    <h2 class="title">庫存現況報表</h2>
+
+                </div>
+                 <section>
+                  
+                   <div class="pagination">
+                        <form action="" class="form_inline">
+                            <div class="total"> 共<span>3</span>筆資料，第<span>1/1</span>頁，每頁顯示 
+                                <select name="" id="">
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                </select> 筆
+                               
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="scroltable-container"><table class="table_hover scroltable">
+                        <tbody>
+                            <tr>
+                            <th>組織ID</th>
+                            <th>組織名稱</th>
+                            <th>林產品起始資訊追溯碼</th>
+                            <th>林產物類別</th>
+                            <th>林產品品項</th>
+                            <th>登錄日期</th>
+                            <th>樹/竹種</th>    
+                            <th>剩餘量(庫存量)</th>
+                            <th>庫存日數</th>
+                           
+                            </tr>
+
+                            <tr>
+                            <td align="center">12345</td>
+                            <td align="center">快樂貓</td>
+                            <td align="center">3-123456-24-01</td>
+                            <td align="center">國有林林產物</td>
+                            <td align="center">造林木（原木/其他）</td>
+                            <td align="center">2025/05/03</td>
+                            <td align="center">柳杉</td>
+                            <td align="center">12345</td>
+                            <td align="center">125</td>
+                            </tr>
+
+                            <tr>
+                            <td align="center">12345</td>
+                            <td align="center">快樂貓</td>
+                            <td align="center">3-123456-24-02</td>
+                            <td align="center">國有林林產物</td>
+                            <td align="center">造林木（原木/其他）</td>
+                            <td align="center">2025/05/04</td>
+                            <td align="center">柳杉</td>
+                            <td align="center">12345</td>
+                            <td align="center">120</td>
+                            </tr>
+
+                            <tr>
+                            <td align="center">12345</td>
+                            <td align="center">快樂貓</td>
+                            <td align="center">3-123456-24-03</td>
+                            <td align="center">國有林林產物</td>
+                            <td align="center">造林木（原木/其他）</td>
+                            <td align="center">2025/05/05</td>
+                            <td align="center">柳杉</td>
+                            <td align="center">12345</td>
+                            <td align="center">110</td>
+                            </tr>
+
+                          
+
+                    </tbody></table></div>
+
+
+
+                 
+                </section>
+                <!-- control panel End -->
+            </section>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/enquire/enquire.js"></script><!-- query js -->
+    <script>
+        $('header').load("header.htm");
+        $('aside').load("aside.htm");
+    </script>
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

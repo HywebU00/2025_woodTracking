@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="vendor/wow/animate.min.css"><!-- animate -->
+    <link rel="stylesheet" href="css/hyui.css"><!-- hyUI css -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon"><!-- favicon -->
+</head>
+
+<body id="FrontDesk">
+    <!-- wrapper Start -->
+    <div class="wrapper inner-page">
+        <!-- header -->
+        <header>
+            <div class="container wow fadeIn">
+                <section class="header">
+                    <div class="col">
+                        <h1><a href="#">農業部林業及自然保育署</a></h1>
+                    </div>
+                    <div class="col rookies">
+                        
+                        <a href="front-accont.htm">申請帳號</a>
+                        <a href="front-login.htm">登入系統</a>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <div class="container">
+                <div class="inner-wrap">
+                    <h2 class="title">臺灣林產品生產追溯系統</h2>
+<div class="content-box">
+                  <!-- breadcrumb + function -->
+                  <div class="Flex-set">
+                      <!-- breadcrumb路徑 -->
+                      <div class="breadcrumb">
+                          <ul>
+                              <li><a href="/masterpage-tw">首頁</a></li>
+                              <li>忘記密碼</li>
+                          </ul>
+                      </div>
+
+                  </div>
+                  <hr>
+                  <!-- sub-title ＋ 條件查詢 switch -->
+                    <div class="Flex-set">
+                      <h3 class="sub-title">忘記密碼</h3>
+
+                  </div>
+
+
+                  <!-- CP Start -->
+                  <section class="cp">
+
+                      <div>
+                    <p>「忘記密碼」功能提供本系統的使用者，重新設定密碼。需確認您所填的「帳號」和「電子郵件地址」在「臺灣林產品生產追溯系統」有註冊成功並完成開通程序，才會傳送重新設定密碼資料到您登記的電子郵件地址。</p>              
+                  <form action="resumeApplyAccount-tw-sendForgetPswMail" method="post" id="form1">
+                  <div class="flex-form form_grid">
+                      <div class="form_grp">
+                        <label for="address" class="form_title">帳號：<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                        <div class="form_content">
+                          <input name="userId" id="userId" type="text"  placeholder="請輸入帳號" class="lost" value="54happycat"> 
+                                    <div class="notice_error">帳號未完成開通程序</div>
+
+
+
+                        </div>
+                      </div>
+
+                      <div class="form_grp">
+                        <label for="address" class="form_title">電子郵件地址：<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                        
+                        <div class="form_content">
+                        
+                          <input name="upEmail" id="upEmail" type="text"  placeholder="請輸入電子郵件地址" autocomplete="off" class="lost" value="54happycat@cat.com"> 
+                                    <div class="notice_error">帳號與電子郵件地址不匹配</div>
+                       
+                        </div>
+                      </div>
+                        
+                      <div class="form_grp">
+                        <div class="form_title">驗證碼：<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></div>
+                        <div class="form_content form_inline">
+                            <input name="verification" id="verification" type="text" placeholder="請輸入驗證碼">
+                            <br>
+                              <img src="images/basic/captcha.gif" alt="" class="captcha">
+                              <input type="hidden" name="imgkey" id="imgkey" value="1740038738828">
+                            <button class="btn" id="reloadImgBtn" onclick="reload();"><i class="i_reflash2"></i>重新整理</button>
+                            
+                            <p>按下「重置密碼」按鈕後，請前往信箱收信，信件中有提供臨時密碼，請使用臨時密碼登入系統並立即重新設定您的密碼。</p>
+                                      
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="btn_grp">
+                    <input name="" type="button" value="取消" class="btn btn-reset" onclick="javascript:location.href='/masterpage-tw'">
+                    <input name="" type="button" value="重置密碼" class="btn btn-submit" onclick="checkSubmit()">
+                  </div>
+              </form>
+            </div></section>
+        <!-- CP End -->
+        </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <!-- 點綴性蔬菜 -->
+                <!--div class="corn wow bounceIn">玉米</div>
+                <div class="tomato wow bounceIn">番茄</div>
+                <div class="onion wow bounceIn">洋蔥</div>
+                <div class="broccoli wow bounceIn">青花菜</div>
+                <div class="bell-pepper wow bounceIn">甜椒</div>
+                <div class="corn type2 wow bounceIn">玉米</div-->
+                <!-- footer 內容 -->
+                <div class="footer-flex">
+                    <div class="col">
+                        <a href="#" class="footer-logo">農業部林業及自然保育署</a>
+                    </div>
+                    <div class="col">
+                        <p class="footer-info">TEL：02-8667-6111<br>
+
+                        </p>
+                        <div class="footer-box">
+                            <ul class="footer_link">
+                                <li><a href="javascript:;">隱私權政策與服務條款</a></li>
+                                
+                            </ul>
+                            <p class="copyright">農業部林業及自然保育署&nbsp;&nbsp;版權所有</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- slick js-->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <!-- wow-->
+    <script src="vendor/wow/wow.min.js"></script>
+
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

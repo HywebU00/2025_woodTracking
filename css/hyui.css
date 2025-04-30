@@ -13720,7 +13720,8 @@ h1.title span, h2.title span {
 }
 
 body#FrontDesk {
-  background: #f4f4f4;
+  background: url(../images/front-desk/bg-front.jpg) 50% top no-repeat;
+  background-attachment: fixed;
 }
 
 .text-center {
@@ -13739,18 +13740,14 @@ body#FrontDesk {
 #FrontDesk > .wrapper {
   background: none;
 }
-#FrontDesk > .wrapper.inner-page .header {
-  padding-bottom: 500px;
-}
 #FrontDesk > .wrapper.inner-page .inner-wrap {
-  padding: 0 0 2.5em;
-  margin-top: -36em;
+  padding: 0 0 1.75em;
 }
 #FrontDesk > .wrapper.inner-page .inner-wrap h2.title {
   font-size: 2.125em;
   letter-spacing: 1px;
   padding-bottom: 0.5em;
-  color: #fff;
+  color: #4d361f;
 }
 #FrontDesk > .wrapper.inner-page .inner-wrap h3.sub-title {
   font-size: 1.45em;
@@ -13925,8 +13922,7 @@ body#FrontDesk {
 #FrontDesk header {
   box-shadow: none;
   max-width: 1200px;
-  background: url(../images/front-desk/key-visual.jpg) left 50% top 0px no-repeat;
-  background-size: cover;
+  background: none;
   height: auto;
   margin: 0 auto;
   padding-left: inherit;
@@ -14098,7 +14094,7 @@ body#FrontDesk {
   padding: 0.5em 0.75em;
   font-weight: bold;
   font-size: 120%;
-  color: #fff;
+  color: #4d361f;
   border-radius: 3px;
   transition: all 0.2s ease-in;
   position: relative;
@@ -14109,7 +14105,7 @@ body#FrontDesk {
   position: absolute;
   width: 1px;
   height: 20px;
-  background: #fff;
+  background: #756d65;
   right: -3px;
   top: 50%;
   margin-top: -10px;
@@ -14120,6 +14116,7 @@ body#FrontDesk {
 #FrontDesk header .container .header .col.rookies a:hover, #FrontDesk header .container .header .col.rookies a:focus {
   padding: 0.5em 1.25em;
   background: rgba(0, 0, 0, 0.45);
+  color: #fff;
 }
 #FrontDesk header .container .slogen {
   padding: 90px 0 300px;
@@ -14212,19 +14209,14 @@ body#FrontDesk {
   }
 }
 #FrontDesk .content {
-  padding-top: 0;
   margin-left: 0;
-  margin-top: -8em;
 }
 #FrontDesk .content .container {
-  padding-top: 14em;
-  background: url(../images/front-desk/content-bg.png) 50% top no-repeat;
   position: relative;
   min-height: 1px;
   padding-left: 5em;
   padding-right: 5em;
   box-sizing: border-box;
-  position: relative;
 }
 @media screen and (max-width: 767px) {
   #FrontDesk .content .container {
@@ -14234,18 +14226,6 @@ body#FrontDesk {
     padding-right: 3em;
     box-sizing: border-box;
   }
-}
-#FrontDesk .content .container:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../images/front-desk/bg-block-white.jpg);
 }
 #FrontDesk .content .container .animate-scroll {
   position: absolute;
@@ -15670,126 +15650,20 @@ body#FrontDesk {
   background: none;
 }
 #FrontDesk footer .container {
-  padding: 7em 0 5em;
+  margin-bottom: 2em;
   position: relative;
   min-height: 1px;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  padding-left: 6em;
+  padding-right: 6em;
   box-sizing: border-box;
-  background: url(../images/front-desk/footer-cover.png) 50% top no-repeat, #72493a;
-  background-size: contain;
-  position: relative;
-  position: relative;
-}
-#FrontDesk footer .container:before {
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 60px;
-  right: 12%;
-  top: -14px;
-  background: url(../images/front-desk/deco_plate.png) 50% 50% no-repeat;
 }
 #FrontDesk footer .container .footer-flex {
   align-items: flex-end;
-}
-#FrontDesk footer .container .footer-flex .col:nth-child(2) {
-  position: relative;
-}
-#FrontDesk footer .container .footer-flex .col:nth-child(2):before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  left: -50px;
-  top: -50%;
-  background: url(../images/front-desk/deco_footer.png) 50% 50% no-repeat;
-}
-#FrontDesk footer .container .corn, #FrontDesk footer .container .tomato, #FrontDesk footer .container .onion, #FrontDesk footer .container .broccoli, #FrontDesk footer .container .bell-pepper {
-  position: absolute;
-  width: 120px;
-  height: 96px;
-  font-size: 0;
-  top: -13em;
-}
-#FrontDesk footer .container .corn {
-  background: url(../images/front-desk/icon-corn.svg) 50% 50% no-repeat;
-  left: 16px;
-  top: 12px;
-}
-#FrontDesk footer .container .corn.type2 {
-  left: auto;
-  right: 16px;
-  top: 28px;
-}
-#FrontDesk footer .container .tomato {
-  background: url(../images/front-desk/icon-tomato.svg) 50% 50% no-repeat;
-  left: calc(16.6666666667% + 16px);
-  top: 4px;
-}
-#FrontDesk footer .container .onion {
-  background: url(../images/front-desk/icon-onion.svg) 50% 50% no-repeat;
-  left: calc(33.3333333333% + 46px);
-  top: 20px;
-}
-#FrontDesk footer .container .broccoli {
-  background: url(../images/front-desk/icon-broccoli.svg) 50% 50% no-repeat;
-  left: calc(50% + 16px);
-  top: 30px;
-}
-#FrontDesk footer .container .bell-pepper {
-  background: url(../images/front-desk/icon-bellpepper.svg) 50% 50% no-repeat;
-  left: calc(66.6666666667% + 16px);
-  top: 32px;
-}
-@media screen and (max-width: 991px) {
-  #FrontDesk footer .container .corn.type2 {
-    display: none;
-  }
-  #FrontDesk footer .container .tomato {
-    left: calc(16.6666666667% + 12px);
-  }
-  #FrontDesk footer .container .onion {
-    top: 0;
-  }
-  #FrontDesk footer .container .broccoli {
-    left: calc(50% + 34px);
-    top: 6px;
-  }
-  #FrontDesk footer .container .bell-pepper {
-    left: auto;
-    right: 16px;
-    top: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  #FrontDesk footer .container .corn {
-    left: 8%;
-    top: 0;
-  }
-  #FrontDesk footer .container .tomato {
-    left: calc(50% - 60px);
-  }
-  #FrontDesk footer .container .onion {
-    left: auto;
-    right: 4%;
-    top: 0;
-  }
-  #FrontDesk footer .container .broccoli,
-  #FrontDesk footer .container .bell-pepper {
-    display: none;
-  }
-}
-@media screen and (max-width: 575px) {
-  #FrontDesk footer .container .corn {
-    left: -18px;
-    top: 0;
-  }
-  #FrontDesk footer .container .onion {
-    left: auto;
-    right: -18px;
-    top: 0;
-  }
+  padding: 1em 0;
+  background: rgba(79, 32, 8, 0.5);
+  border-radius: 4px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 @media (min-width: 320px) {
   #FrontDesk footer .col:first-child {
@@ -15926,6 +15800,10 @@ body#FrontDesk {
 @media screen and (max-width: 767px) {
   #FrontDesk footer .footer-logo {
     padding-bottom: 2em;
+  }
+  #FrontDesk footer .col:last-child {
+    -moz-text-align-last: inherit;
+         text-align-last: inherit;
   }
 }
 

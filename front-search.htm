@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex" /><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣林產品生產追溯系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="vendor/facybox/dist/jquery.fancybox.min.css"><!-- 燈箱facybox -->
+    <link rel="stylesheet" href="css/hyui.css"><!-- hyUI css -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon"><!-- favicon -->
+</head>
+
+<body id="FrontDesk">
+    <!-- wrapper Start -->
+    <div class="wrapper inner-page">
+        <!-- header -->
+        <header>
+            <div class="container wow fadeIn">
+                <section class="header">
+                    <div class="col">
+                        <h1><a href="#">農業部林業及自然保育署</a></h1>
+                    </div>
+                    <div class="col rookies">
+                        
+                        <a href="front-accont.htm">申請帳號</a>
+                        <a href="front-login.htm">登入系統</a>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <!-- main Start -->
+        <!-- 主要內容區 -->
+        <div class="content">
+            <div class="container">
+                <div class="inner-wrap">
+                    <h2 class="title">臺灣林產品生產追溯系統</h2>
+
+<div class="content-box">
+                <!-- breadcrumb + function -->
+                <div class="Flex-set">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="masterpage-tw">首頁</a></li>
+                            <li><a href="front-accont.htm">臺灣林產品生產追溯查詢</a></li>
+                           
+                        </ul>
+                    </div>
+                    <!-- function功能區塊 -->
+                    <!--div class="function">
+                           <ul>
+                               <li class="icon_back"><a href="javascript:history.back()">回上一頁</a></li>
+                              
+                           </ul>
+                       </div-->
+                </div>
+                <hr>
+                <!-- sub-title ＋ 條件查詢 switch -->
+                <div class="Flex-set">
+                    <h3 class="sub-title">臺灣林產品生產追溯查詢</h3>
+                    <!-- 條件查詢 switch -->
+                    <!-- <input type="button" class="btn btn-operating" id="Conditional_switch" value="顯示條件查詢"> -->
+                </div>
+                <!-- CP Start -->
+                <section class="cp">
+
+                    <!-- 這邊開始把1-1的樣式移過來用-->
+                    <p class="explan">
+                        註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位,
+                        不能為空白。
+                    </p>
+                    <form action="resumeApplyAccount-tw-allSignUpSuccess" method="post" id="form1">
+                        <div class="flex-form form_grid">
+                            <!-- input -->
+                            <!--h4 class="mark">1-1、input</h4-->
+
+
+
+
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">生產追溯條碼：</label>
+                                <div class="form_content">
+                                    <input name="userId" id="userId" type="text" >
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">產品名稱：</label>
+                                 <div class="form_content">
+                                    <input name="password" id="password" type="text" size="40">
+                                   
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="address" class="form_title">申請者姓名：</label>
+                                 <div class="form_content">
+                                    <input name="passwordCheck" id="passwordCheck" type="text" size="40" >
+                                   
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">單位名稱：</label>
+                                 <div class="form_content">
+                                    <input name="upEmail" id="upEmail" type="text" value="" p>
+                                    
+                                </div>
+                            </div>
+
+
+
+                            <div class="form_grp">
+                                <label for="address" class="form_title">樹種：</label>
+                                <div class="form_content">
+                                    <select>
+                                        <option>臺灣肖楠</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form_grp">
+                                <div class="form_title">
+                                    驗證碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>
+                                </div>
+                                <div class="form_content form_inline">
+                                    <input name="verification" id="verification" type="text" placeholder="請輸入驗證碼"> <br>
+                                     <img src="images/basic/captcha.gif" alt="" class="captcha"> 
+                                    
+                                    <button class="btn" id="reloadImgBtn" onclick="reload();">
+                                        <i class="i_reflash2"></i>重新整理
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div align="center">
+                        <!--button type="button" class="btn " onclick="location.href='front-form1.htm'">回上一頁</button-->
+                        <button type="button" id="submitBtn" class="btn btn-submit" onclick="window.location.href='front-search.htm'">搜尋</button>
+                        
+                    </div>
+                </section>
+
+                <section>
+                  
+                  <h3 class="sub-title">搜尋結果列表</h3>
+                   <div class="pagination">
+                        <form action="" class="form_inline">
+                            <div class="total"> 共<span>5</span>筆資料，第<span>1/1</span>頁，每頁顯示 
+                                <select name="" id="">
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                </select> 筆
+                               
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="scroltable-container">
+                       
+
+
+
+
+
+
+
+
+                                <table class="table_hover scroltable">
+                        <tbody>
+                            <tr>
+                            <th>產品追溯碼</th>
+                            <th>產品名稱</th>
+                            <th>申請者姓名</th>
+                            <th>單位名稱</th>               
+                            </tr>
+
+                            <tr>
+                            <td align="center"><a href="front-searchdetail.htm">0427004357</a></td>
+                            <td align="center">臺灣肖楠角塊</td>
+                            <td align="center">張Ｏ毅</td>
+                            <td align="center">農業部林業及自然保育署臺中分署</td>
+                           
+                            </tr>
+
+                            <tr>
+                            <td align="center"><a>0427004226</a></td>
+                            <td align="center">臺灣肖楠原木</td>
+                            <td align="center">賴Ｏ秀</td>
+                            <td align="center">柏欣昌發展實業有限公司</td>
+                           
+                            </tr>                           
+
+                            <tr>
+                            <td align="center"><a>0725004332</a></td>
+                            <td align="center">臺灣肖楠花生雕刻</td>
+                            <td align="center">廖Ｏ弘</td>
+                            <td align="center">京典精品傢俱館</td>
+                           
+                            </tr>
+                          
+                            <tr>
+                            <td align="center"><a>1123003554</a></td>
+                            <td align="center">臺灣肖楠原木</td>
+                            <td align="center">劉Ｏ娥</td>
+                            <td align="center">福田檜木傢俱行</td>
+                           
+                            </tr>
+                    </tbody></table></div>
+
+
+
+                 
+                </section>
+                <!-- CP End -->
+            </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <!-- 點綴性蔬菜 -->
+                <!--div class="corn wow bounceIn">玉米</div>
+                <div class="tomato wow bounceIn">番茄</div>
+                <div class="onion wow bounceIn">洋蔥</div>
+                <div class="broccoli wow bounceIn">青花菜</div>
+                <div class="bell-pepper wow bounceIn">甜椒</div>
+                <div class="corn type2 wow bounceIn">玉米</div-->
+                <!-- footer 內容 -->
+                <div class="footer-flex">
+                    <div class="col">
+                        <a href="#" class="footer-logo">農業部林業及自然保育署</a>
+                    </div>
+                    <div class="col">
+                        <p class="footer-info">TEL：02-8667-6111<br>
+
+                        </p>
+                        <div class="footer-box">
+                            <ul class="footer_link">
+                                <li><a href="javascript:;">隱私權政策與服務條款</a></li>
+                                
+                            </ul>
+                            <p class="copyright">農業部林業及自然保育署&nbsp;&nbsp;版權所有</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- slick js-->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <!-- 燈箱facybox -->
+    <script src="vendor/facybox/dist/jquery.fancybox.min.js"></script>
+
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

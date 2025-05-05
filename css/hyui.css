@@ -6772,7 +6772,6 @@ aside nav ul {
 }
 aside nav > ul > li {
   width: 100%;
-  transition: 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   position: relative;
 }
 aside nav > ul > li:hover {
@@ -6796,7 +6795,7 @@ aside nav > ul > li.li_hasChild:after {
   width: 6px;
   height: 6px;
   transform: rotate(-45deg);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.75);
   border-left: none;
   border-top: none;
   content: "";
@@ -6814,6 +6813,9 @@ aside nav > ul > li.li_hasChild.open:after {
   content: "";
   right: 1em;
   top: 19px;
+}
+aside nav > ul > li.li_hasChild:hover:after {
+  border-color: rgb(255, 255, 255);
 }
 aside nav > ul > li a {
   display: block;
@@ -6838,7 +6840,6 @@ aside nav > ul > li a span {
   color: #fff;
   color: #2e2213;
   font-size: 1em;
-  transition: 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 aside nav > ul > li a span b {
   padding-right: 8px;

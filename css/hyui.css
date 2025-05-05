@@ -13720,9 +13720,17 @@ h1.title span, h2.title span {
   color: #d84a5c;
 }
 
-body#FrontDesk {
+body#FrontDesk:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: url(../images/front-desk/bg-front.jpg) 50% top no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 .text-center {
